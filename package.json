@@ -10,6 +10,9 @@
     "lint": "tsc",
     "release": "pnpm run build && changeset publish"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "devDependencies": {
     "@changesets/cli": "^2.27.1",
     "tsup": "^8.0.1",
