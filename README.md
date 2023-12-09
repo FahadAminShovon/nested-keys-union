@@ -6,7 +6,9 @@ It supports arrays, objects, and primitive types, allowing you to easily navigat
 ## Installation
 
 ```bash
-npm install nested-keys-union
+npm install nested-keys-union --save-dev
+yarn add -D nested-keys-union
+pnpm add nested-keys-union --save-dev
 ```
 
 ## Usage
@@ -37,12 +39,6 @@ const nestedKey: AllNestedKeys = 'address.contacts.0.value';
 
 In this example, `NestedKeys` is used to obtain a union type `AllNestedKeys` representing all possible keys within the `exampleObject` structure.
 The resulting type `AllNestedKeys` can be used to ensure type safety when working with nested keys.
-
-## Type Details
-
-- `Primitive`: Represents the union type of string or number.
-- `PremitiveWithBoolean`: Represents the union type of Primitive or boolean.
-- `PrefixHelper`: Utility type for prefixing keys.
 
 ## Contribution
 
